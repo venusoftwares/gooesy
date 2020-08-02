@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gooesy", "gooesy\gooesy.csproj", "{5F37C433-20F6-4D5C-B093-AF1B74F99AF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gy-partner", "..\gy-partner\gy-partner.csproj", "{2790D3B4-DBF1-48E1-B771-9A6490067F31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GooesyPartner", "..\gy-partner\GooesyPartner.csproj", "{2790D3B4-DBF1-48E1-B771-9A6490067F31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gooesyPartner", "gooesyPartner\gooesyPartner.csproj", "{B7A6AF52-330B-4DD5-B7B9-D608363411D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GooesyFranchise", "gooesyPartner\GooesyFranchise.csproj", "{B7A6AF52-330B-4DD5-B7B9-D608363411D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
