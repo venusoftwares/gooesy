@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GooesyPartner.Models
+namespace GooesyFranchise.Models
 {
     public class Model1
     {

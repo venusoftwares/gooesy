@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GooesyPartner.Views
+namespace GooesyFranchise.Views
 {
     using System;
     using System.Collections.Generic;

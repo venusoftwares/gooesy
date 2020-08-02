@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("GooesyPartner.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("GooesyFranchise.Resource", IsApplication=true)]
 
-namespace GooesyPartner
+namespace GooesyFranchise
 {
 	
 	
@@ -44,7 +44,7 @@ namespace GooesyPartner
 		{
 			
 			// aapt resource value: 0x7F010000
-			public const int gooesy = 2130771968;
+			public const int gooesyPartner = 2130771968;
 			
 			// aapt resource value: 0x7F010001
 			public const int Icon = 2130771969;

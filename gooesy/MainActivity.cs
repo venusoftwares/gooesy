@@ -12,7 +12,7 @@ using Android.Graphics;
 
 namespace gooesy
 {
-    [Activity(Label = "gooesy", MainLauncher = true, Theme = "@android:style/Theme.NoTitleBar")]
+    [Activity(Label = "Gooesy", MainLauncher = true, Theme = "@android:style/Theme.NoTitleBar")]
     public class MainActivity : Activity
     {
         WebView webView;

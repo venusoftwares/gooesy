@@ -6,13 +6,13 @@ using Android.Views;
 using Android.Webkit;
 using Android.Widget;
 using Android.OS;
-using GooesyPartner.Views;
-using GooesyPartner.Models;
+using GooesyFranchise.Views;
+using GooesyFranchise.Models;
 using Android.Graphics;
 
-namespace GooesyPartner
+namespace GooesyFranchise
 {
-    [Activity(Label = "Gooesy Partner", MainLauncher = true, Theme = "@android:style/Theme.NoTitleBar")]
+    [Activity(Label = "Gooesy Franchise", MainLauncher = true, Theme = "@android:style/Theme.NoTitleBar")]
     public class MainActivity : Activity
     {
         WebView webView;
@@ -26,7 +26,7 @@ namespace GooesyPartner
             webView = FindViewById<WebView>(Resource.Id.webView);
             webView.Settings.JavaScriptEnabled = true;
             webView.SetWebViewClient(new HelloWebViewClient());
-            webView.LoadUrl("https://www.gooesy.com/add-business");
+            webView.LoadUrl("https://www.gooesy.com/index.php/adminpanel");
 
 
             base.OnCreate(bundle);
@@ -76,4 +76,3 @@ namespace GooesyPartner
 
 
 }
-
