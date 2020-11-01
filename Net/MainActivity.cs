@@ -10,7 +10,7 @@ using Android.Webkit;
 
 namespace Net
 {
-	[Activity(Label = "Net", MainLauncher = true, Theme = "@android:style/Theme.NoTitleBar")]
+	[Activity(Label = "Net", Theme = "@android:style/Theme.NoTitleBar")]
 	public class MyWb : Activity
 	{
 		public IValueCallback mUploadMessage;
