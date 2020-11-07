@@ -6,7 +6,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Webkit;
- 
+using Android.Graphics;
 
 namespace Net
 {
@@ -27,7 +27,7 @@ namespace Net
 			webview.Settings.JavaScriptEnabled = true;
 			webview.Settings.AllowFileAccess = true;
 			webview.LoadUrl("https://netappsdemo.pw");
-			webview.SetWebViewClient(new WebViewClient());
+			webview.SetWebViewClient(new HelloWebViewClient());
 			webview.SetWebChromeClient(new CustomWebChromeClient(this));
 
 		}
@@ -49,7 +49,46 @@ namespace Net
 			}
 			base.OnActivityResult(requestCode, resultCode, data);
 		}
+		public class HelloWebViewClient : WebViewClient
+		{
+			public override bool ShouldOverrideUrlLoading(WebView view, IWebResourceRequest request)
+			{
+				view.LoadUrl(request.Url.ToString());
+				return false;
+			}
+			public override void OnPageStarted(WebView view, string url, Bitmap favicon)
+			{
+				base.OnPageStarted(view, url, favicon);
+			}
+
+			// For API level 24 and later
+
+
+			public override void OnReceivedError(WebView view, IWebResourceRequest request, WebResourceError error)
+			{
+
+				base.OnReceivedError(view, request, error);
+
+				//------------------------------
+				// In this line, I want to redirect my page
+
+			}
+			public override void OnPageFinished(WebView view, string url)
+			{
+				base.OnPageFinished(view, url);
+			}
+		}
+		public override bool OnKeyDown(Keycode keyCode, KeyEvent e)
+		{
+			if (keyCode == Keycode.Back && webview.CanGoBack())
+			{
+				webview.GoBack();
+				return true;
+			}
+			return base.OnKeyDown(keyCode, e);
+		}
 	}
+
 
 	public class CustomWebChromeClient : WebChromeClient
 	{
