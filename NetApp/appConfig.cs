@@ -3,7 +3,8 @@
 
     public class appConfig
     {
-        public const string URL = "https://netappsdemo.pw";
+        public const string URL = "https://nanda-et.com/login";
+        //public const string URL = "https://netappsdemo.pw";
         public const bool JAVA_SCRIPT_ENABLED = true;
         public const bool ALLOW_FILE_ACCESS = true;
         public const bool MEDIA_PLAY_BACK_REQUIRES_USER_GESTURE = true;
