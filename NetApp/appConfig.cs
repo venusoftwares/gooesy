@@ -3,7 +3,7 @@
 
     public class appConfig
     {
-        public const string URL = "https://nanda-et.com/login";
+        public const string URL = "http://gcbs.pw/Users/Login";
         //public const string URL = "https://netappsdemo.pw";
         public const bool JAVA_SCRIPT_ENABLED = true;
         public const bool ALLOW_FILE_ACCESS = true;

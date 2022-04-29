@@ -6,7 +6,7 @@ using System;
 
 namespace NetApp
 {
-    [Activity(Label = "NET", Theme = "@android:style/Theme.NoTitleBar", ScreenOrientation = ScreenOrientation.Portrait)]
+    [Activity(Label = "VBILL", Theme = "@android:style/Theme.NoTitleBar", ScreenOrientation = ScreenOrientation.Portrait)]
     public class InternetActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
